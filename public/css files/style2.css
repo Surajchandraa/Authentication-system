@@ -1,0 +1,28 @@
+.maincard{
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    overflow-y: hidden;
+
+}
+img{
+    width: 150px;
+    height: 150px;
+    background-repeat: no-repeat;
+    margin-left: 20px;
+    
+}
+
+p{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.users{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+}

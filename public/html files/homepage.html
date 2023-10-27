@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="../css files/style.css">
+</head>
+
+
+<body>
+    <nav id="navbar">
+        <ul>
+            <li>Home</li>
+            <li>help</li>
+            <li>contact</li>
+
+        </ul>
+
+        <button onclick="window.location.href='/sign_up'" id="up">Sign Up</button>
+    <button onclick="window.location.href='/sign_in'" id="in">Sign In</button>
+    <button onclick="window.location.href='/chat'" id="ch">chat</button>
+    <button id="lo"  onclick="window.location.href='/logout'">logout</button>
+    </nav>
+    
+    
+   <script>
+
+    let logout = document.getElementById('lo')
+    logout.addEventListener("click",()=>{
+    let lo=fetch("http://localhost:5000/logout");
+    lo.then((value)=>{
+        return value.status()
+    }).then((value)=>{
+        console.log(value)
+        if(value==200){
+            alert("you have successfully logged out")
+        }
+    })
+})
+   </script>
+    
+</body>
+</html>
