@@ -6,7 +6,7 @@ this is a complete authentication system. It includes features like password has
 -  Open cloned repo in code editor
 -   open terminal and run command `npm i` . It will install all depedencies.
 -   make a .env file in root and write secretkey, `secretkey = "your secret key"`.
--   start your mongodb database `systemctl start mongod`
+-   start mongodb `systemctl start mongod`
 
 ##  How to run:
 - for running type command `node server.js` or  `nodemon server.js`
